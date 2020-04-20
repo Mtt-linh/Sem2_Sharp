@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="Session1.cs" />
+      <Compile Remove="Session2\Assignment2\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Program.cs" />
+      <None Include="Program.cs" />
+      <None Remove="Session2\Assignment2\**" />
+      <Compile Remove="Session1\Songuyen.cs" />
+      <None Include="Session1\Songuyen.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Session2\Assignment2\**" />
+    </ItemGroup>
+
+</Project>
