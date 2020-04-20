@@ -16,6 +16,8 @@
       <None Remove="Session2\Assignment2\**" />
       <Compile Remove="Session1\Songuyen.cs" />
       <None Include="Session1\Songuyen.cs" />
+      <Compile Remove="demo.cs" />
+      <None Include="demo.cs" />
     </ItemGroup>
 
     <ItemGroup>
