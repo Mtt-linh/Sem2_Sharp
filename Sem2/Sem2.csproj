@@ -8,6 +8,8 @@
     <ItemGroup>
       <Compile Remove="Session1.cs" />
       <Compile Remove="Session2\Assignment2\**" />
+      <Compile Remove="Session3\woman.cs" />
+      <Compile Remove="Lab2\Productlist.cs" />
     </ItemGroup>
 
     <ItemGroup>
@@ -18,6 +20,14 @@
       <None Include="Session1\Songuyen.cs" />
       <Compile Remove="demo.cs" />
       <None Include="demo.cs" />
+      <Compile Remove="Session3\program.cs" />
+      <None Include="Session3\program.cs" />
+      <Compile Remove="Session3\IHuman.cs" />
+      <None Include="Session3\IHuman.cs" />
+      <Compile Remove="Session2\assignment_2\test.cs" />
+      <None Include="Session2\assignment_2\test.cs" />
+      <Compile Remove="Lab2\Test.cs" />
+      <None Include="Lab2\Test.cs" />
     </ItemGroup>
 
     <ItemGroup>

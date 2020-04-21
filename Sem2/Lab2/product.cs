@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Sem2.Session2.assignment_2
 {
-    public class Product
+    public partial class product
     {
         public int id;
         public string name;
@@ -13,7 +13,7 @@ namespace Sem2.Session2.assignment_2
         public string desc;
         public List<string> gallery;
 
-        public Product(int id, string name, double price, int qty, string image, string desc)
+        public product(int id, string name, double price, int qty, string image, string desc)
         {
             this.id = id;
             this.name = name;
@@ -24,7 +24,7 @@ namespace Sem2.Session2.assignment_2
         }
         
 
-        public Product()
+        public product()
         {
         }
 
