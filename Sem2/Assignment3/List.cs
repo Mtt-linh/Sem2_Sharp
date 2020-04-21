@@ -8,7 +8,7 @@ namespace Sem2.Assignment3
     {
         
     private static Cart cart = new Cart(1,"Linh mai",34,"ha noi","Viet nam",Lists);
-    public static List<product> Lists { get; set; }
+    public static List<Product> Lists { get; set; }
 
     public static void Main(string[] args)
         {
@@ -60,8 +60,8 @@ namespace Sem2.Assignment3
             string image = Console.ReadLine();
             Console.WriteLine("Enter description: ");
             string desc = Console.ReadLine();
-            product product = new product(id, name, price, qty, image, desc);
-            if (cart.Add(product))
+            var p = new Product(id, name, price, qty, image, desc);
+            if (cart.Add(Product))
             {
                 Console.WriteLine("new product added: name= : " + name);
             }
@@ -71,11 +71,13 @@ namespace Sem2.Assignment3
             }
         }
 
+        public static Product Product { get; set; }
+
         private static void RemoveProduct()
         {
             Console.WriteLine("Enter existing product name: ");
             string str = Console.ReadLine();
-            product existingProduct = cart.Query(str);
+            Product existingProduct = cart.Query(str);
             if (existingProduct == null)
             {
                 Console.WriteLine("Product not found ");
@@ -96,7 +98,7 @@ namespace Sem2.Assignment3
         {
             Console.WriteLine("Enter existing name: ");
             string name = Console.ReadLine();
-            product existingProduct = cart.Query(name);
+            Product existingProduct = cart.Query(name);
             if (existingProduct == null)
             {
                 Console.WriteLine("Product can not found ");

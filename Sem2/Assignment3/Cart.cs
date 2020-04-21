@@ -4,7 +4,7 @@ using Sem2.Session2.assignment_2;
 
 namespace Sem2.Assignment3
 {
-    public class Cart : product
+    public class Cart : Product
     {
         private int id;
         private string customer;
@@ -12,26 +12,26 @@ namespace Sem2.Assignment3
         private int grandTotal;
         private string city;
         private string country;
-        private List<product> Listproduct;
+        private List<Product> Listproduct;
         private int total = 0;
 
 
-        public Cart(int id, string customer, int grandTotal, string city, string country, List<product> listproduct)
+        public Cart(int id, string customer, int grandTotal, string city, string country, List<Product> listproduct)
         {
             this.id = id;
             this.customer = customer;
             this.grandTotal = grandTotal;
             this.city = city;
             this.country = country;
-            this.Listproduct = new List<product>();
+            this.Listproduct = new List<Product>();
         }
 
-        public int Find(product product)
+        public int Find(Product product)
         {
             return this.Listproduct.IndexOf(product);
         }
 
-        public Boolean Add(product product)
+        public Boolean Add(Product product)
         {
             if (Find(product) > 0)
             {
@@ -43,7 +43,7 @@ namespace Sem2.Assignment3
             return true;
         }
 
-        public Boolean Remove(product product)
+        public Boolean Remove(Product product)
         {
             int note = Find(product);
             if (note < 0)
@@ -86,7 +86,7 @@ namespace Sem2.Assignment3
             Console.WriteLine("your grand Total :" + GetGrandTotal());
         }
 
-        public product Query(string name)
+        public Product Query(string name)
         {
             int position = Find(name);
             if (position >= 0)
@@ -97,7 +97,7 @@ namespace Sem2.Assignment3
             return null;
         }
 
-        public string Query(product product)
+        public string Query(Product product)
         {
             if (Find(product) >= 0)
             {

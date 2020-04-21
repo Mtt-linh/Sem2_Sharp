@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Sem2.Session2.assignment_2
+namespace Sem2.Lab3
 {
     public partial class product
     {

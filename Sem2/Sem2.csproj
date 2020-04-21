@@ -10,6 +10,7 @@
       <Compile Remove="Session2\Assignment2\**" />
       <Compile Remove="Session3\woman.cs" />
       <Compile Remove="Lab2\Productlist.cs" />
+      <Compile Remove="Lab3\demo.cs" />
     </ItemGroup>
 
     <ItemGroup>
@@ -27,7 +28,7 @@
       <Compile Remove="Session2\assignment_2\test.cs" />
       <None Include="Session2\assignment_2\test.cs" />
       <Compile Remove="Lab2\Test.cs" />
-      <None Include="Lab2\Test.cs" />
+      <None Include="Lab3\Test.cs" />
     </ItemGroup>
 
     <ItemGroup>

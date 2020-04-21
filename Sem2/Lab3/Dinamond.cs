@@ -1,4 +1,4 @@
-﻿namespace Sem2.Session2.assignment_2
+﻿namespace Sem2.Lab3
 {
     public class Dinamond : product
     {
