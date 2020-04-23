@@ -29,6 +29,11 @@
       <None Include="Session2\assignment_2\test.cs" />
       <Compile Remove="Lab2\Test.cs" />
       <None Include="Lab3\Test.cs" />
+      <Compile Remove="Lab3\Test.cs" />
+      <None Include="Lab3\Test.cs" />
+      <Compile Remove="Assignment3\List.cs" />
+      <None Include="Assignment3\List.cs" />
+      <Compile Remove="Session4\Test.cs" />
     </ItemGroup>
 
     <ItemGroup>
