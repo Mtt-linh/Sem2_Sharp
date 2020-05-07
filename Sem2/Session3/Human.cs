@@ -10,7 +10,7 @@ namespace Sem2.Session3
         public abstract void AddFriend();
         public void Running()
         {
-            Console.WriteLine("Run....");
+            System.Console.WriteLine("Run....");
         }
     }
 }

@@ -12,10 +12,14 @@ namespace Sem2.Session4
         protected string image;
         protected string desc;
         protected List<string> gallery;
-
+        private event ShowAlert ChangeQty;
         public Product()
         {
             this.gallery = new List<string>();
+            if (ChangeQty == null)
+            {
+                ChangeQty += Cart.AlertMessage;
+            }
         }
 
         public Product(int id, string name, uint qty, string image, string desc, List<string> gallery)
@@ -28,7 +32,18 @@ namespace Sem2.Session4
             this.gallery = gallery;
         }
 
+        public string this[int Index]
+        {
+            get { return gallery[Index]; }
+            set { gallery[Index] = value; }
+        }
 
+        public static int YearCode; // static ptopertic
+
+        // {
+        //   get => YearCode;
+        // set => YearCode = value;
+        //}
         public int Id // khai bao 1 proterties
         {
             get => id; //ham tra ve gia tri read
@@ -65,10 +80,16 @@ namespace Sem2.Session4
             set => desc = value;
         }
 
+        public List<string> Gallery
+        {
+            get => gallery;
+            set => gallery = value;
+        }
+
         public void GetInfo()
         {
-            Console.WriteLine("ID: " + this.id + "Name : " + this.name + "Quantity :" + this.qty + "Price " + price +
-                              "Image" + this.image);
+            System.Console.WriteLine("ID: " + this.id + "Name : " + this.name + "Quantity :" + this.qty + "Price " + price +
+                                     "Image" + this.image);
         }
 
         public bool CheckStock()
@@ -81,7 +102,7 @@ namespace Sem2.Session4
         {
             if (gallery.Count >= 10)
             {
-                Console.WriteLine(" anh da vuot qua so luong can xoa bot ");
+                System.Console.WriteLine(" anh da vuot qua so luong can xoa bot ");
                 return false;
             }
 
@@ -94,14 +115,14 @@ namespace Sem2.Session4
 
         public void DeleteGallery()
         {
-            Console.WriteLine("danh sach anh :");
+            System.Console.WriteLine("danh sach anh :");
             for (int i = 0; i < gallery.Count; i++)
             {
-                Console.WriteLine(i + ". " + gallery[1]);
+                System.Console.WriteLine(i + ". " + gallery[1]);
             }
 
-            Console.WriteLine(" chon anh de xoa :");
-            int stt = Convert.ToInt32(Console.ReadLine());
+            System.Console.WriteLine(" chon anh de xoa :");
+            int stt = Convert.ToInt32(System.Console.ReadLine());
             gallery.RemoveAt(stt);
         }
 

@@ -12,12 +12,12 @@ namespace Sem2.Session3
         public virtual void Running() // khi viet 1 ham cho pheps gi de thi viet thaam virtual 
             // override nhan dien xem co duoc phep ghi de hay khong 
         {
-            Console.WriteLine("vua di vua hat ..........");
+            System.Console.WriteLine("vua di vua hat ..........");
         }
 
         public new void Eat()
         {
-            Console.WriteLine("eating .........");
+            System.Console.WriteLine("eating .........");
         }
     }
 }

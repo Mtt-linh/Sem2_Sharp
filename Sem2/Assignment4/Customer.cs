@@ -33,7 +33,7 @@ namespace Sem2.Assignment4
 
         public void GetInfo()
         {
-            Console.WriteLine("ID: " + this.Id +
+            System.Console.WriteLine("\nID: " + this.Id +
                               "\nHo va ten: " + this.name +
                               "\nQuoc tich: "+this.nationality+
                               "\nNgay thanh toan : " + this.Date +

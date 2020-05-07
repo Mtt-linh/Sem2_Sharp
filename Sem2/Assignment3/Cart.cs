@@ -35,7 +35,7 @@ namespace Sem2.Assignment3
         {
             if (Find(product) > 0)
             {
-                Console.WriteLine("thoat ");
+                System.Console.WriteLine("thoat ");
                 return false;
             }
 
@@ -48,12 +48,12 @@ namespace Sem2.Assignment3
             int note = Find(product);
             if (note < 0)
             {
-                Console.WriteLine(" product not found ");
+                System.Console.WriteLine(" product not found ");
                 return false;
             }
 
             this.Listproduct.Remove(product);
-            Console.WriteLine(" delete");
+            System.Console.WriteLine(" delete");
             return true;
         }
 
@@ -73,17 +73,17 @@ namespace Sem2.Assignment3
 
         public void Print()
         {
-            Console.WriteLine("customer : " + this.customer +
-                              "\nCity: " + this.city +
-                              "\nCountry: " + this.country);
-            Console.WriteLine("cart:      ");
+            System.Console.WriteLine("customer : " + this.customer +
+                                     "\nCity: " + this.city +
+                                     "\nCountry: " + this.country);
+            System.Console.WriteLine("cart:      ");
             for (int i = 0; i < Listproduct.Count; i++)
             {
-                Console.WriteLine(Listproduct[i].id + ":" + Listproduct[i].name + "price" + Listproduct[i].Price +
-                                  "Quantity" + Listproduct[i].qty + "Image" + Listproduct[i].image);
+                System.Console.WriteLine(Listproduct[i].id + ":" + Listproduct[i].name + "price" + Listproduct[i].Price +
+                                         "Quantity" + Listproduct[i].qty + "Image" + Listproduct[i].image);
             }
 
-            Console.WriteLine("your grand Total :" + GetGrandTotal());
+            System.Console.WriteLine("your grand Total :" + GetGrandTotal());
         }
 
         public Product Query(string name)

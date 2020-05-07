@@ -2,30 +2,79 @@
 
 namespace Sem2.Session4
 {
+    public delegate void ShowAlert(string msg);
     public class Cart
     {
         private int id;
-        private string Customer;
+        private string customer;
         private double granTotal;
         private List<Product> listProduct;
-        private string City;
-        private string Country;
-
+        private string city;
+        private string country;
+        private event ShowAlert AddToCart;
         public Cart(int id, string customer, double granTotal, List<Product> listProduct, string city, string country)
         {
             this.id = id;
-            Customer = customer;
+            this.customer = customer;
             this.granTotal = granTotal;
             this.listProduct = listProduct;
-            City = city;
-            Country = country;
+            this.city = city;
+            this.country = country;
+            if (AddToCart == null)
+            {
+                AddToCart += AlertMessage;
+            }
+        }
+
+        public static void AlertMessage(string msg)
+        {
+            System.Console.WriteLine(msg);
+        }
+        public int Id
+        {
+            get => id;
+            set => id = value;
+        }
+
+        public string Customer
+        {
+            get => customer;
+            set => customer = value;
+        }
+
+        public double GranTotal
+        {
+            get => granTotal;
+            set => granTotal = value;
+        }
+
+        public List<Product> ListProduct
+        {
+            get => listProduct;
+            set => listProduct = value;
+        }
+
+        public string City
+        {
+            get => city;
+            set => city = value;
+        }
+
+        public string Country
+        {
+            get => country;
+            set => country = value;
         }
 
         public bool AddProduct(Product product)
         {
             listProduct.Add(product); //them tien trong grandTotal
+            //phat su kien
+            
             return true;
         }
+
+        
 
         public bool RemoveProduct(Product product)
         {

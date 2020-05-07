@@ -13,6 +13,12 @@ namespace Sem2.Session4
             
         }
 
+        public uint Cara
+        {
+            get => cara;
+            set => cara = value;
+        }
+
         public bool IsReal()
         {
             if (cara > 5) return true;

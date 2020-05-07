@@ -16,6 +16,23 @@ namespace Sem2.Session4
             c1.AddProduct(F1);
             c1.AddProduct(d1);
             Console.WriteLine(" tong tien phai thah toan: " + c1.FinalTotal());
+            p1.AddGallery("anh2.jpg");
+            p1.AddGallery("anh3.jpg");
+            p1.AddGallery("anh4.jpg");
+            foreach (string x  in p1.Gallery)
+            {
+                Console.WriteLine(x);
+            }
+
+            //p1.Gallery[1] = "anh55.jpg";
+            p1[1] = "anh 26.jpg";
+            //list, arrayliat tuong tu
+            for (int i = 0; i < p1.Gallery.Count; i++)
+            {
+                Console.WriteLine(p1[i]);
+                
+            }
+           
         }
     }
 }

@@ -31,12 +31,12 @@ namespace Sem2.Session2.assignment_2
         public void GetInfo()
         {
 
-            Console.WriteLine("ID : " + this.id +
-                              "\nName: " + this.name +
-                              "\nPrice: " + this.Price +
-                              "\nQty: " + this.qty +
-                              "\nimage: " + this.image +
-                              "\ndesc: " + this.desc);
+            System.Console.WriteLine("ID : " + this.id +
+                                     "\nName: " + this.name +
+                                     "\nPrice: " + this.Price +
+                                     "\nQty: " + this.qty +
+                                     "\nimage: " + this.image +
+                                     "\ndesc: " + this.desc);
            /* Console.WriteLine("ID : " + id +
                               "\nName: " + name +
                               "\nPrice: " + Price +
@@ -48,7 +48,7 @@ namespace Sem2.Session2.assignment_2
 
         public void show(string name)
         {
-            Console.WriteLine(name);
+            System.Console.WriteLine(name);
            return;
         }
 
@@ -56,12 +56,12 @@ namespace Sem2.Session2.assignment_2
         {
             if (qty > 0)
             {
-                Console.WriteLine("con hang ");
+                System.Console.WriteLine("con hang ");
                 return;
             }
             else
             {
-                Console.WriteLine("het hang ");
+                System.Console.WriteLine("het hang ");
                 return;
             }
         }
@@ -76,12 +76,12 @@ namespace Sem2.Session2.assignment_2
             {
                 for (var i = 0; i < 10; i++)
                 {
-                    Console.WriteLine(gallery[i]);
+                    System.Console.WriteLine(gallery[i]);
                 }
 
-                Console.WriteLine("chon file ban muon xoa");
+                System.Console.WriteLine("chon file ban muon xoa");
                 int number;
-                number = Convert.ToInt32(Console.ReadLine());
+                number = Convert.ToInt32(System.Console.ReadLine());
                 gallery.Remove(gallery[number]);
                 gallery.Add(file);
             }

@@ -3,7 +3,8 @@ using System.Collections.Generic;
 
 namespace Sem2.Assignment4
 {
-    public class Test
+    public class Program
+
     {
         public static void Main(string[] args)
         {
@@ -23,9 +24,10 @@ namespace Sem2.Assignment4
             Customer i1 = new Customer(1, "Nguyen Minh Hanh", "Viet Nam", new DateTime(year: 2020, month: 12, day: 26),
                 "Sinh hoat", 13, 122.4, 40);
             
-           Bill hd = new Bill(1,0,0 ,new List<Customer>());
-             Console.WriteLine("Tong tin cua khach ntrong nuoc  la :"+ hd.ResultTotal1());
-            Console.WriteLine(" Tong tien cua khach nuoc ngoai laf : "+ hd.ResultTotal2());
+
+            Bill hd = new Bill(1, 0, 0, new List<Customer>());
+            Console.WriteLine("Tong tin cua khach ntrong nuoc  la :" + hd.ResultTotal1());
+            Console.WriteLine(" Tong tien cua khach nuoc ngoai laf : " + hd.ResultTotal2());
         }
     }
 }

@@ -29,11 +29,27 @@
       <None Include="Session2\assignment_2\test.cs" />
       <Compile Remove="Lab2\Test.cs" />
       <None Include="Lab3\Test.cs" />
-      <Compile Remove="Lab3\Test.cs" />
-      <None Include="Lab3\Test.cs" />
       <Compile Remove="Assignment3\List.cs" />
       <None Include="Assignment3\List.cs" />
       <Compile Remove="Session4\Test.cs" />
+      <Compile Remove="Session4\Program.cs" />
+      <None Include="Session4\Program.cs" />
+      <Compile Remove="Assignment4\Program.cs" />
+      <None Include="Assignment4\Program.cs" />
+      <Compile Remove="CorrectASS4\Program.cs" />
+      <None Include="CorrectASS4\Program.cs" />
+      <Compile Remove="Session6\Program.cs" />
+      <None Include="Session6\Program.cs" />
+      <Compile Remove="Session6\marth.cs" />
+      <None Include="Session6\marth.cs" />
+      <Compile Remove="lab6\program.cs" />
+      <None Include="lab6\program.cs" />
+      <Compile Remove="Session7\Program.cs" />
+      <None Include="Session7\Program.cs" />
+      <Compile Remove="Lab3\Test.cs" />
+      <None Include="Lab3\Test.cs" />
+      <Compile Remove="Session8\demo.cs" />
+      <None Include="Session8\demo.cs" />
     </ItemGroup>
 
     <ItemGroup>

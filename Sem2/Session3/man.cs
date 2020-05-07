@@ -10,12 +10,12 @@ namespace Sem2.Session3
         }
         public void SayHello()
         {
-            Console.WriteLine("hello baby");
+            System.Console.WriteLine("hello baby");
         }
 
         public void SayHello(string msg)
         {
-            Console.WriteLine(msg);
+            System.Console.WriteLine(msg);
         }
     }
 }

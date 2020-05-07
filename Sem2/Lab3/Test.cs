@@ -13,12 +13,16 @@ namespace Sem2.Lab3
             pt.instock(12);
             pt.galleryAdd("sfa");
             var list = InsertListFashion();
-            Console.WriteLine("list san pham");
+            System.Console.WriteLine("list san pham");
             display(list);
             Icheck(list, "Black", "M");
             /////////////////////////
             var Lists = Initialized();
             Dcheck(Lists);
+            
+            /////////
+            Eventbuy eby = new Eventbuy();
+            eby.ClickButton();
         }
         static List<Fashion> InsertListFashion()
         {
@@ -34,7 +38,7 @@ namespace Sem2.Lab3
         {
             foreach (var dp in list)
             {
-                Console.WriteLine("Id : " + dp.id +
+                System.Console.WriteLine("Id : " + dp.id +
                                   "\nName: " + dp.name +
                                   "\nQuantity: " + dp.qty +
                                   "\nImange: " + dp.image);
@@ -47,7 +51,7 @@ namespace Sem2.Lab3
             {
                 if (ic.Icheck(color, size))
                 {
-                    Console.WriteLine(" san pham con hang");
+                    System.Console.WriteLine(" san pham con hang");
                     break;
                 }
             }
@@ -69,11 +73,11 @@ namespace Sem2.Lab3
             {
                 if (Cd.realOrFake())
                 {
-                    Console.WriteLine("hang that");
+                    System.Console.WriteLine("hang that");
                 }
                 else
                 {
-                    Console.WriteLine("hang gia ");
+                    System.Console.WriteLine("hang gia ");
                 }
             }
         }
