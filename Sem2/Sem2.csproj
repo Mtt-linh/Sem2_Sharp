@@ -11,6 +11,7 @@
       <Compile Remove="Session3\woman.cs" />
       <Compile Remove="Lab2\Productlist.cs" />
       <Compile Remove="Lab3\demo.cs" />
+      <Compile Remove="Session8\NumberCounter\**" />
     </ItemGroup>
 
     <ItemGroup>
@@ -50,10 +51,26 @@
       <None Include="Lab3\Test.cs" />
       <Compile Remove="Session8\demo.cs" />
       <None Include="Session8\demo.cs" />
+      <Compile Remove="Lab8.cs" />
+      <None Include="Lab8.cs" />
+      <None Remove="Session8\NumberCounter\**" />
+      <Compile Remove="Assignment6\Program.cs" />
+      <None Include="Assignment6\Program.cs" />
+      <Compile Remove="Session8\Demo2.cs" />
+      <None Include="Session8\Demo2.cs" />
+      <Compile Remove="Assignment7\Program.cs" />
+      <None Include="Assignment7\Program.cs" />
+      <Compile Remove="PRACTICAL\Exercise1\GeometryExample.cs" />
+      <None Include="PRACTICAL\Exercise1\GeometryExample.cs" />
     </ItemGroup>
 
     <ItemGroup>
       <EmbeddedResource Remove="Session2\Assignment2\**" />
+      <EmbeddedResource Remove="Session8\NumberCounter\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="PRACTICAL\Exercise2" />
     </ItemGroup>
 
 </Project>
