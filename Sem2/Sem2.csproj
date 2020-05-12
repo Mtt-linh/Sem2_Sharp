@@ -69,8 +69,4 @@
       <EmbeddedResource Remove="Session8\NumberCounter\**" />
     </ItemGroup>
 
-    <ItemGroup>
-      <Folder Include="PRACTICAL\Exercise2" />
-    </ItemGroup>
-
 </Project>
